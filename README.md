@@ -1,26 +1,70 @@
-# RedString
+# Les Experts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+This project is a web app made with 3 more people during a software developer class.
+This repository contains the Front-End part of the project.
+[Back-end repository](https://nodejs.org/)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Development 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Angular
+* HTML
+* CSS
+* Typescript
+* SpringBoot
+* Hibernate
+* MySQL
 
-## Build
+## Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+[![npm](https://img.shields.io/badge/npm-5.8.0-green.svg)](https://www.npmjs.com/)
+[![maven](https://img.shields.io/badge/maven-3.5.3-red.svg)](https://maven.apache.org/)
+[![git](https://img.shields.io/badge/git-2.16.03-yellow.svg)](https://git-scm.com/)
 
-## Running unit tests
+IDE (Eclipse, VSCode, IntelliJ...)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+open Git Bash in the .. folder.
+Run the following command to clone the repository :
+`git clone https://github.com/geromegrignon/ANGULAR-Les_Experts.git`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Open a command line interface (CLI) in the folder root.
+Run `npm install` to install the dependancies described in the package.json file
+
+## Personal contribution on the Front-end project part
+
+I realize the full front-end apart the following sections :
+
+* modules : weapons/pieceOfEvidence
+* tables : weapons/pieceOfEvidence
+* api : weapons/pieceOfEvidence
+
+
+## Known issues
+
+Proccess to edit an existing 'affaire' :
+
+* Select an affaire from the 'Tableau de bord' page
+* Click on the 'Editer' button to display a form
+* Change the values
+* Click on 'Envoyer' to save the changes
+
+#### The 'Valider' button doesn't work
+#### the 'Annuler' button just hides the form to display back the description of the 'affaire'
+#### Hitting the 'Annuler' buton after sending the changes with the 'Envoyer' button doesn't cancel the changes.
+
+
+
+
+## Unit tests
+
+Run `ng test` to execute the unit tests.
+
+## End-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests.
 
 ## Further help
 
