@@ -22,7 +22,7 @@ Mode opératoire :
 2 - Installer NPM  
 3 - Installer Angular CLI  
 4 - Installer les différents packages dans la console de l'IDE choisi (ici Visual Studio Code) et chercher des mises à jour  
-5 - Importer le projet sous l'IDE et le mettre à jour (NPM install)
+5 - Importer le projet sous l'IDE et installer les dépendances, avec la commande NPM install
 
 ----------
 
@@ -31,15 +31,15 @@ Personnellement, j'ai particulièrement travaillé sur la partie UML, design (mo
 
 **Créer la partie front de l'application** :
 
-    - créer un nouveau projet : ng new <nom du projet>
+   - créer un nouveau projet : ng new <nom du projet>
     
-    - créer des composants : ng generate componant <nom du componant>
-      (ou ng g c <nom du componant>)
+   - créer des composants : ng generate componant <nom du componant>
+     (ou ng g c <nom du componant>)
     
-    - selon le modèle MVC (Modèle Vue Controleur), ou plutôt MVVM, l'architecture 
+   - selon le modèle MVC (Modèle Vue Controleur), ou plutôt MVVM, l'architecture 
       d'Angular se décompose ainsi :
     
-    => services : utilisés pour injecter du code (signalé par @Injectable()) 
+   => services : utilisés pour injecter du code (signalé par @Injectable()) 
        dans différents composants, et qui sera utilsable (à condition d'importer
        le service dans chaque composant). On le crée avec ng g s <nom>
 
@@ -47,34 +47,37 @@ Personnellement, j'ai particulièrement travaillé sur la partie UML, design (mo
           composants (ex : la méthode createWeapon(), que l'on retrouve dans le onSubmit()
           du form-weapon.component.ts, va permettre de créer une nouvelle arme)
     
-    => app-module : c'est le module racine, qui se divise en 2 parties :
+   => app-module : c'est le module racine, qui se divise en 2 parties :
     
-    	~ les imports : peut importer des librairies externes, d'autres modules, ...
+   ~ les imports : peut importer des librairies externes, d'autres modules, ...
      	  pour les rendre utilisable dans tout le projet
     
 		¤ "import { FormWeaponComponent } from './modules/weapon/form-weapon/form-weapon.component';" :
 	      importe le fichier, permettant de créer ou modifier une arme
 
-   		~ les décorateurs : intervient dans l'injection du code et la compilation
+   ~ les décorateurs : intervient dans l'injection du code et la compilation
 		  des templates
 
 		¤ FormWeaponComponent : cette création permet aussi l'import automatique du fichier dans la partie "import"
     
-    => app-routing : permet de charger et de configurer les routes dans les différents
+   => app-routing : permet de charger et de configurer les routes dans les différents
        modules du projet
     
 		¤ path: 'weapons/:id', component: DetailWeaponComponent :
 		  la sélection d'une arme précise (id) enverra sur le composant "detail", 
 		  permettant d'afficher sa fiche détaillée
 
-    => composants "classique" : typiquement composés de 4 fichiers :  
+   => composants "classique" : typiquement composés de 4 fichiers :  
     
-    ~ .html : architecture du composant  
-    ~ .css : habillage du composant (souvent remplacé par le style.css à la racine)  
-    ~ .ts : contient les méthodes et liens avec les autres composants  
-    ~ .spec.ts : utilisé pour tester le module
+   ~ .html : architecture du composant  
+   ~ .css : habillage du composant (souvent vide, car remplacé par le style.css à la racine)  
+   ~ .ts : contient les méthodes et liens avec les autres composants  
+   ~ .spec.ts : utilisé pour lesv tests unitaires du module
 
 		¤ table-weapons : contient ces 4 types de fichiers, permettant (grâce au .html
-		  et .ts) d'afficher le tableau complet des armes
+		  et .ts) d'afficher le tableau des armes, en fonction des champs importés de la table
+
+----------
+
     
-Pour démarrer l'application, il suffira de se placer sur le dossier du projet, d'entrer dans la console de l'IDE **ng serve**, puis de se connecter, grâce à un navigateur, à l'adresse **http://localhost:4200**. Cela va permettre de visualiser le fonctionnement du projet de manière complète, mais en version locale.
+Pour démarrer l'application, il suffira de se placer sur le dossier du projet, de l'ouvrir  dans la console de l'IDE et de taper **ng serve**. Ensuitr, il faudra se connecter (grâce à un navigateur) à l'adresse **http://localhost:4200**. Cela va ainsi permettre de visualiser le fonctionnement du projet de manière complète, mais en version locale.
