@@ -10,13 +10,13 @@ Conçu et réalisé par l'équipe GGSF (Gérôme Gilles Stéphan Frédéric)
 
 *Partie Front*
 
-Pré-requis :
+**Pré-requis :**
 
     NPM : 5.7.1
     NodeJS : 8.9.1
     Angular CLI : 1.6.8
 
-Mode opératoire :
+**Mode opératoire :**
 
 1 - Installer NodeJS  
 2 - Installer NPM  
@@ -29,19 +29,25 @@ Mode opératoire :
 Personnellement, j'ai particulièrement travaillé sur la partie UML, design (mokup, CSS) et "armes" du projet.
 
 
+**Attention** : les fichiers notés en *camelcase* pour les attributs et composants deviennent des fichiers en *kebabcase* pour les propriétés et les directives !  
+
+	¤ par exemple, monBeauFichier devient mon-beau-fichier
+
+----------
+
 **Créer la partie front de l'application** :
 
-   - créer un nouveau projet : ng new <nom du projet>
+   - créer un nouveau projet : ng new 'nom du projet'
     
-   - créer des composants : ng generate componant <nom du componant>
-     (ou ng g c <nom du componant>)
+   - créer des composants : ng generate componant 'nom du componant'
+     (ou ng g c 'nom du componant')
     
    - selon le modèle MVC (Modèle Vue Controleur), ou plutôt MVVM, l'architecture 
       d'Angular se décompose ainsi :
     
    => services : utilisés pour injecter du code (signalé par @Injectable()) 
        dans différents composants, et qui sera utilsable (à condition d'importer
-       le service dans chaque composant). On le crée avec ng g s <nom>
+       le service dans chaque composant). On le crée avec ng g s 'nom du service'
 
 		¤ weapon.service.ts : va répartir les différentes méthodes dans les autres
           composants (ex : la méthode createWeapon(), que l'on retrouve dans le onSubmit()
