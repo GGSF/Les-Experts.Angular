@@ -99,7 +99,7 @@ de VS Code **ng test**, qui compilera l'application et l'executera via Karma. Le
 mais aussi dans le navigateur grâce à Jasmine. Si tout est OK, le test a réussi, sinon il faudra chercher la cause de l'échec  
 et modifier le fichier en conséquence.  
 
-    ¤ table-weapons.componant.spec.ts : test la création de données à l'exécution et renvoie un succès
+    ¤ table-weapons.componant.spec.ts : teste la création de données à l'exécution et renvoie un succès
 ----------
 
     
