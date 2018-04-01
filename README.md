@@ -84,6 +84,16 @@ Personnellement, j'ai particulièrement travaillé sur la partie UML, design (mo
 		  et .ts) d'afficher le tableau des armes, en fonction des champs importés de la table
 
 ----------
+**Tester le code** :  
 
+Pour réaliser des tests unitaires avec Angular, on utilise Karma et Jasmine :  
+
+  - Karma : c'est un outil de terminal JavaScript qui permet le lancement de navigateurs web.  
+    Une fois le navigateur lancé, Karma y charge le code de l’application et exécute vos tests.
+
+  - Jasmine : c'est un framework BDD (Behavior Driven Development) appliqué aux tests et lisible par tous.  
+    Il fonctionne avec Chrome.  
+    
+On utilise ensuite le fichier .spec.ts, créé spécialement pour tester.
     
 Pour démarrer l'application, il suffira de se placer sur le dossier du projet, de l'ouvrir  dans la console de l'IDE et de taper **ng serve**. Ensuitr, il faudra se connecter (grâce à un navigateur) à l'adresse **http://localhost:4200**. Cela va ainsi permettre de visualiser le fonctionnement du projet de manière complète, mais en version locale.
