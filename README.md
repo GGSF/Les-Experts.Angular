@@ -21,8 +21,9 @@ Conçu et réalisé par l'équipe GGSF (Gérôme Gilles Stéphan Frédéric)
 1 - Installer NodeJS  
 2 - Installer NPM  
 3 - Installer Angular CLI  
-4 - Installer les différents packages dans la console de l'IDE choisi (ici Visual Studio Code) et chercher des mises à jour  
-5 - Importer le projet sous l'IDE et installer les dépendances, avec la commande NPM install
+4 - Installer Karma et Jasmine, pour executer les tests
+5 - Installer les différents packages dans la console de l'IDE choisi (ici Visual Studio Code) et chercher des mises à jour  
+6 - Importer le projet sous l'IDE et installer les dépendances, avec la commande NPM install
 
 ----------
 
@@ -94,6 +95,8 @@ Pour réaliser des tests unitaires avec Angular, on utilise Karma et Jasmine :
   - Jasmine : c'est un framework BDD (Behavior Driven Development) appliqué aux tests et lisible par tous.  
     Il fonctionne avec Chrome.  
     
-On utilise ensuite le fichier .spec.ts, créé spécialement pour tester.
+On utilise ensuite le fichier .spec.ts, créé spécialement pour réaliser un test. Pour ça, on entre dans la console de commande 
+de VS Code ng test, qui compilera l'application et l'executera via Karma. Le résultat s'affichera dans la console de l'IDE, mais aussi dans le navigateur grâce à Jasmine. Si tout est OK, le test a réussi, sinon il faudra chercher la cause de l'échec et modifier le fichier en conséquence.  
+----------
     
 Pour démarrer l'application, il suffira de se placer sur le dossier du projet, de l'ouvrir  dans la console de l'IDE et de taper **ng serve**. Ensuitr, il faudra se connecter (grâce à un navigateur) à l'adresse **http://localhost:4200**. Cela va ainsi permettre de visualiser le fonctionnement du projet de manière complète, mais en version locale.
