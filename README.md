@@ -70,8 +70,8 @@ Personnellement, j'ai particulièrement travaillé sur la partie UML, design (mo
    => *app-routing* : permet de charger et de configurer les routes dans les différents
        modules du projet
     
-		¤ path: 'weapons/:id', component: DetailWeaponComponent : la sélection d'une arme précise (id) enverra sur le composant 
-		"detail", permettant d'afficher sa fiche détaillée
+		¤ path: 'weapons/:id', component: DetailWeaponComponent : la sélection d'une arme précise (id)  
+    enverra sur le composant "detail", permettant d'afficher sa fiche détaillée
 
    => *composants "classique"* : typiquement composés de 4 fichiers :  
     
